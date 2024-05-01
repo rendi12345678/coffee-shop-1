@@ -1,0 +1,33 @@
+@use "../variables/" as v;
+@use "../functions/" as f;
+
+$golden-ratio: 1.618;
+$body-text-min: f.rem(14);
+$body-text-prefered: 1.6vw;
+$body-text-max: f.rem(16);
+$body-text: clamp($body-text-min, $body-text-prefered, $body-text-max);
+$h4: $body-text;
+$h3: calc($h4 * $golden-ratio);
+$h2: calc($h3 * $golden-ratio);
+$h1: calc($h2 * $golden-ratio);
+
+h1 {
+  font-size: $h1;
+}
+
+h2 {
+  font-size: $h2;
+}
+
+h3 {
+  font-size: $h3;
+}
+
+h4 {
+  font-size: $h4;
+}
+
+p,
+a {
+  font-size: $body-text;
+}

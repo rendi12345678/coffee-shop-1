@@ -1,0 +1,12 @@
+@use "../functions/" as f;
+
+$max-width: f.rem(1100);
+$border-radius: f.rem(12);
+$base-size: f.rem(10);
+$double-base-size: calc($base-size * 2);
+$base-vertical-fluid-size: 5svh;
+$translate-size: f.rem(200);
+$translate-size-min: f.rem(-200);
+$navbar-height: calc($double-base-size);
+$base-horizontal-fluid-size: 5vw;
+$animation-time: 1.8s;
