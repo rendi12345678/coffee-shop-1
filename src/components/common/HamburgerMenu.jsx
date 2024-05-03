@@ -1,6 +1,6 @@
-const HamburgerMenu = () => {
+const HamburgerMenu = ({ className }) => {
   return (
-    <div>
+    <div className={className}>
       <span></span>
       <span></span>
       <span></span>

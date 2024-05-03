@@ -1,0 +1,44 @@
+@use "../variables/" as v;
+@use "../base/" as b;
+@use "../mixins/" as m;
+
+.hero {
+  height: 100svh;
+  width: 100%;
+
+  &__container {
+    height: 100%;
+    @include m.grid-container(space-between, center);
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__sub-title,
+  &__title {
+    margin-bottom: v.$spacing-1;
+  }
+
+  &__description {
+    margin-bottom: v.$spacing-2;
+  }
+
+  &__sub-title {
+    color: v.$accent-color;
+  }
+
+  &__button {
+    border-radius: b.$body-text;
+  }
+
+  &__image {
+    justify-self: end;
+    height: 60%;
+    aspect-ratio: 3 / 4;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+      box-sizing: border-box;
+    }
+  }
+}

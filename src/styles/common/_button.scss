@@ -1,0 +1,42 @@
+@use "../base/" as b;
+@use "../variables/" as v;
+@use "../functions/" as f;
+
+$button-color: #3498db;
+$button-hover-color: #2980b9;
+$top-bottom-padding: f.rem(12);
+$button-padding: $top-bottom-padding calc($top-bottom-padding * 3);
+$button-font-color: v.$primary-color;
+$primary-button-color: v.$accent-color;
+
+.button {
+  display: inline-block;
+  padding: $button-padding;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  transition: 0.3s ease;
+  font-weight: 600;
+  color: v.$primary-color;
+  box-sizing: border-box;
+
+  &:hover {
+    filter: brightness(85%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.primary-btn {
+  background-color: $primary-button-color;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: f.rem(2) solid v.$accent-color;
+  color: v.$accent-color;
+}

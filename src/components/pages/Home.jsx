@@ -1,5 +1,11 @@
+import Hero from "../layout/Hero";
+
 function Home() {
-  return <div>{/* <h1>Welcome to my site, hello world</h1> */}</div>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }
 
 export default Home;

@@ -1,0 +1,8 @@
+@use "../functions/" as f;
+
+$base-spacing: f.rem(16);
+$spacing-1: calc($base-spacing * 1);
+$spacing-2: calc($base-spacing * 2);
+$spacing-3: calc($base-spacing * 3);
+$spacing-4: calc($base-spacing * 4);
+$spacing-5: calc($base-spacing * 5);

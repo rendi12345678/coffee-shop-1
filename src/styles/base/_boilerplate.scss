@@ -1,47 +1,8 @@
 @use "../variables/" as v;
+@use "../functions/" as f;
 @use "../mixins/" as m;
 
 .container {
-  @include m.flex-container(space-between, center);
-  width: min(100% - calc(v.$base-horizontal-fluid-size * 2), v.$max-width);
+  width: min(100% - v.$spacing-2, v.$max-width);
   margin-inline: auto;
-}
-
-$button-padding-y: 0.5rem;
-$button-padding-x: 1rem;
-$button-border-radius: 0.25rem;
-$button-font-size: 1rem;
-$button-font-weight: 600;
-$button-primary-color: #007bff;
-$button-secondary-color: #6c757d;
-
-.button {
-  display: inline-block;
-  padding: $button-padding-y $button-padding-x;
-  font-size: $button-font-size;
-  font-weight: $button-font-weight;
-  border-radius: $button-border-radius;
-  cursor: pointer;
-  text-align: center;
-  transition: background-color 0.3s ease;
-
-  &.primary {
-    background-color: v.$primary-color;
-    color: white;
-    border: 1px solid v.$primary-color;
-
-    &:hover {
-      background-color: darken($button-primary-color, 10%);
-    }
-  }
-
-  &.secondary {
-    background-color: $button-secondary-color;
-    color: white;
-    border: 1px solid $button-secondary-color;
-
-    &:hover {
-      background-color: darken($button-secondary-color, 10%);
-    }
-  }
 }

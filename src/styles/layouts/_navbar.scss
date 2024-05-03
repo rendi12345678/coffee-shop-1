@@ -1,18 +1,44 @@
 @use "../variables/" as v;
 @use "../mixins/" as m;
+@use "../base/" as b;
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background: v.$primary-color;
-  padding-block: v.$double-base-size;
+  padding-block: v.$spacing-1;
+
+  &__container,
+  &__menu,
+  &__cart-and-auth {
+    @include m.flex-container(space-between, center);
+  }
+
+  &__menu,
+  &__cart-and-auth,
+  &__logo {
+    width: auto;
+  }
+
+  &__hamburger-menu {
+    display: none;
+  }
 
   &__menu {
-    @include m.flex-container(space-between, center);
-    gap: 2rem;
+    gap: v.$spacing-2;
 
     a {
       text-decoration: none;
+      line-height: 0;
       color: v.$text-color;
     }
   }
 
+  &__cart-and-auth {
+    .button {
+      border-radius: calc(b.$body-text);
+    }
+  }
 }
