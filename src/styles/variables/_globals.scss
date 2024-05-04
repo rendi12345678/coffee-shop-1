@@ -1,5 +1,6 @@
 @use "../functions/" as f;
 
-$max-width: f.rem(900);
+$max-width: f.rem(950);
 $border-radius: f.rem(12);
+$border: f.rem(3.5) solid #000;
 $animation-time: 1.8s;

@@ -6,3 +6,12 @@
   width: min(100% - v.$spacing-2, v.$max-width);
   margin-inline: auto;
 }
+
+.primary-text {
+  color: v.$accent-color;
+}
+
+.primary-bg {
+  background-color: v.$accent-color;
+  color: v.$primary-color;
+}

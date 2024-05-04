@@ -1,0 +1,35 @@
+@use "../variables/" as v;
+@use "../mixins/" as m;
+
+.our-coffee {
+  padding: v.$padding-size;
+  background: v.$secondary-color;
+
+  &__container {
+    @include m.grid-container(space-between, center);
+    grid-template-columns: .4fr .6fr;
+
+    gap: v.$gap-size;
+  }
+
+  &__coffee-list {
+    @include m.flex-container(space-between, center);
+    gap: v.$spacing-1;
+    width: min-content;
+    margin-block: v.$spacing-3;
+  }
+
+  &__image {
+    width: 100%;
+    border: v.$border;
+    overflow: hidden;
+    aspect-ratio: 3 / 4;
+
+    img {
+      object-fit: cover;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

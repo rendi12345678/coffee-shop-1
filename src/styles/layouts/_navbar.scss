@@ -3,7 +3,7 @@
 @use "../base/" as b;
 
 .navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -38,7 +38,7 @@
 
   &__cart-and-auth {
     .button {
-      border-radius: calc(b.$body-text);
+      box-sizing: border-box;
     }
   }
 }

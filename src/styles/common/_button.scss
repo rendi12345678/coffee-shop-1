@@ -4,14 +4,15 @@
 
 $button-color: #3498db;
 $button-hover-color: #2980b9;
-$top-bottom-padding: f.rem(12);
-$button-padding: $top-bottom-padding calc($top-bottom-padding * 3);
+$top-button-padding: calc(b.$h1 / 1.1 / 2.5);
+$bottom-button-padding: calc(b.$h1 / 2.5);
+$left-right-button-padding: calc($bottom-button-padding * 3);
 $button-font-color: v.$primary-color;
 $primary-button-color: v.$accent-color;
 
 .button {
   display: inline-block;
-  padding: $button-padding;
+  padding: $top-button-padding $left-right-button-padding $bottom-button-padding $left-right-button-padding;
   border: none;
   cursor: pointer;
   text-decoration: none;
@@ -21,6 +22,7 @@ $primary-button-color: v.$accent-color;
   font-weight: 600;
   color: v.$primary-color;
   box-sizing: border-box;
+  border-radius: $top-button-padding;
 
   &:hover {
     filter: brightness(85%);
@@ -33,6 +35,7 @@ $primary-button-color: v.$accent-color;
 
 .primary-btn {
   background-color: $primary-button-color;
+  border: f.rem(2) solid v.$accent-color;
 }
 
 .secondary-btn {

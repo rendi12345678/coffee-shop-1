@@ -1,4 +1,5 @@
 @use "../variables/" as v;
+@use "../functions/" as f;
 @use "../base/" as b;
 @use "../mixins/" as m;
 
@@ -9,7 +10,8 @@
   &__container {
     height: 100%;
     @include m.grid-container(space-between, center);
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: .6fr .4fr;
+    gap: v.$gap-size;
   }
 
   &__sub-title,
@@ -21,18 +23,12 @@
     margin-bottom: v.$spacing-2;
   }
 
-  &__sub-title {
-    color: v.$accent-color;
-  }
-
-  &__button {
-    border-radius: b.$body-text;
-  }
-
   &__image {
     justify-self: end;
-    height: 60%;
+    width: 100%;
     aspect-ratio: 3 / 4;
+    border: v.$border;
+    overflow: hidden;
 
     img {
       width: 100%;

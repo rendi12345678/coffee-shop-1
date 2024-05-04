@@ -6,15 +6,14 @@ const Hero = () => {
     <section className="hero" id="hero">
       <Container className="hero__container">
         <div className="hero__info">
-          <h6 className="hero__sub-title">Coffee Shop</h6>
+          <h6 className="hero__sub-title primary-text">Coffee Shop</h6>
           <h1 className="hero__title">
             Keep your dreams aroused with a cup of coffee
           </h1>
           <p className="hero__description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum ad
-            sed aut officia aspernatur velit distinctio vel illum, facilis iure
-            quisquam cumque, molestiae unde. Nesciunt qua e praesentium
-            dignissimos expedita! Veniam.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+            veritatis, distinctio recusandae provident earum atque ex voluptates
+            ullam quas. Maiores?
           </p>
           <Button className="hero__button" color="primary" type="button">
             Book now
