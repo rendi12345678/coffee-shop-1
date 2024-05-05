@@ -7,6 +7,10 @@
   margin-inline: auto;
 }
 
+section:not(.hero) {
+  margin-bottom: v.$spacing-4;
+}
+
 .primary-text {
   color: v.$accent-color;
 }

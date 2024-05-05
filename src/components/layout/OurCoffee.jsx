@@ -1,5 +1,6 @@
 import Button from "../common/Button";
 import Container from "../common/Container";
+import Title from "../common/Title";
 
 const OurCoffee = () => {
   return (
@@ -10,21 +11,23 @@ const OurCoffee = () => {
         </div>
         <div className="our-coffee__info">
           <h6 className="our-coffee__sub-title primary-text">Our coffee</h6>
-          <h1 className="our-coffee__title">Chose your favourite coffee</h1>
-          <p className="our-coffee__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            auctor, nisi ut euismod ultrices, mi risus suscipit libero, sed
-            ultricies odio nulla id lacus.
-          </p>
+          <Title
+            className="our-coffee__title"
+            title="Choose your favourite coffee"
+          >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus
+            tempore natus incidunt obcaecati consequuntur modi beatae odio minus
+            perferendis soluta!
+          </Title>
           <ul className="our-coffee__coffee-list">
             <li className="item primary-text">
-              <p>Frapuccino</p>
+              <h6>Frapuccino</h6>
             </li>
             <li className="item">
-              <p>Arabica</p>
+              <h6>Arabica</h6>
             </li>
             <li className="item">
-              <p>Capuccino</p>
+              <h6>Capuccino</h6>
             </li>
           </ul>
           <Button color="primary" type="button">

@@ -1,0 +1,6 @@
+@use "./rem" as f;
+$base-spacing: f.rem(16);
+
+@function get-spacing($level) {
+  @return calc($base-spacing * $level)
+}

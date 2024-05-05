@@ -1,11 +1,13 @@
 @use "../functions/" as f;
 
 $base-spacing: f.rem(16);
-$spacing-1: calc($base-spacing * 1);
-$spacing-2: calc($base-spacing * 2);
-$spacing-3: calc($base-spacing * 3);
-$spacing-4: calc($base-spacing * 4);
-$spacing-5: calc($base-spacing * 5);
-$spacing-6: calc($base-spacing * 6);
+$spacing-1: f.get-spacing(1);
+$spacing-2: f.get-spacing(2);
+$spacing-3: f.get-spacing(3);
+$spacing-4: f.get-spacing(4);
+$spacing-5: f.get-spacing(5);
+$spacing-6: f.get-spacing(6);
+$spacing-7: f.get-spacing(7);
+$spacing-8: f.get-spacing(8);
 $gap-size: $spacing-6;
 $padding-size: $spacing-3;

@@ -1,0 +1,14 @@
+@use "../variables/" as v;
+@use "../mixins/" as m;
+
+.title {
+  h2 {
+    margin-bottom: v.$spacing-1;
+  }
+}
+
+.title.center-text {
+  @include m.flex-container(center, center);
+  text-align: center;
+  flex-direction: column;
+}
