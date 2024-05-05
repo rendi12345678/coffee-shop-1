@@ -1,0 +1,36 @@
+@use "../mixins/" as m;
+@use "../functions/" as f;
+@use "../variables/" as v;
+
+.featured-products {
+  &__list {
+    @include m.grid-container(space-between, center);
+    grid-template-columns: repeat(auto-fit, minmax(f.rem(200), 1fr));
+    gap: v.$spacing-2;
+    width: 100%;
+  }
+
+  &__item {
+    background: v.$secondary-color;
+  }
+
+  &__info {
+    @include m.flex-container(center, start);
+    flex-direction: column;
+    padding: v.$spacing-1;
+  }
+
+  &__price-and-btn {
+    width: 100%;
+    @include m.flex-container(space-between, baseline);
+    gap: v.$spacing-1;
+  }
+
+  &__price {
+    width: fit-content;
+  }
+
+  &__button {
+    margin-top: v.$spacing-2;
+  }
+}

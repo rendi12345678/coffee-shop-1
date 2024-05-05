@@ -1,14 +1,27 @@
 import Button from "./Button";
 
-const FeaturedProductItem = ({ id, name, description, image, className }) => {
+const FeaturedProductItem = ({ id, name, description, image }) => {
   return (
-    <div className={className} data-id={id}>
-      <img src={image} alt={name} className={`${className}__image`} />
-      <h3 className={`${className}__title`}>{name}</h3>
-      <p className={`${className}__description`}>{description}</p>
-      <Button type="button" color="primary" className={`${className}__button`}>
-        Buy Now
-      </Button>
+    <div className="featured-products__item" data-id={id}>
+      <img src={image} alt={name} className="featured-products__image" />
+      <div className="featured-products__info">
+        <h5 className="featured-products__info__title">{name}</h5>
+        <p className="featured-products__description">{description}</p>
+
+        <div className="featured-products__price-and-btn">
+          <p className="featured-products__price">
+            Price: <strong>$50</strong>
+          </p>
+          <Button
+            className="featured-products__button"
+            type="button"
+            color="primary"
+            size="medium"
+          >
+            Buy Now
+          </Button>
+        </div>
+      </div>
     </div>
   );
 };

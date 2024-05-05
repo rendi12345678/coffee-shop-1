@@ -3,8 +3,13 @@
 @use "../mixins/" as m;
 
 .container {
-  width: min(100% - v.$spacing-2, v.$max-width);
+  width: min(100% - v.$spacing-6, v.$max-width);
   margin-inline: auto;
+}
+
+section {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 section:not(.hero) {
@@ -18,4 +23,8 @@ section:not(.hero) {
 .primary-bg {
   background-color: v.$accent-color;
   color: v.$primary-color;
+}
+
+img {
+  width: 100%;
 }

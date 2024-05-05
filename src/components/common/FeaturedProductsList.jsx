@@ -5,29 +5,28 @@ const products = [
     id: 1,
     name: "Product 1",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "product1.jpg",
+    image: "./imgs/coffee5.jpg",
   },
   {
     id: 2,
     name: "Product 2",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "product2.jpg",
+    image: "./imgs/coffee5.jpg",
   },
   {
     id: 3,
     name: "Product 3",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "product3.jpg",
+    image: "./imgs/coffee5.jpg",
   },
 ];
 
-const FeaturedProductsList = ({ className }) => {
+const FeaturedProductsList = () => {
   return (
-    <div className={className}>
+    <div className="featured-products__list">
       {products.map(({ id, name, description, image }, key) => (
         <FeaturedProductItem
           key={key}
-          className={className}
           id={id}
           name={name}
           description={description}

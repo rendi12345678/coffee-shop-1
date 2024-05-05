@@ -14,7 +14,7 @@ const FeaturedProducts = () => {
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint itaque
           voluptate, eum accusamus perspiciatis necessitatibus.
         </Title>
-        <FeaturedProductsList className="featured-products__list" />
+        <FeaturedProductsList />
       </Container>
     </section>
   );
