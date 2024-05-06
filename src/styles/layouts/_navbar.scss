@@ -33,6 +33,11 @@
       text-decoration: none;
       line-height: 0;
       color: v.$text-color;
+      transition: .3s;
+    }
+
+    a:hover {
+      color: v.$accent-color;
     }
   }
 

@@ -5,14 +5,14 @@
 $button-color: #3498db;
 $button-hover-color: #2980b9;
 
-$padding-top: calc(b.$h1 / 1.1 / 2.5);
-$padding-bottom: calc(b.$h1 / 2.5);
+$padding-top: calc(b.$h1 / 3.4);
+$padding-bottom: calc(b.$h1 / 3.4);
 $padding-button: calc($padding-bottom * 3);
 
 
 // medium button
-$medium-padding-top: calc(b.$h1 / 1.1 / 4);
-$medium-padding-bottom: calc(b.$h1 / 4);
+$medium-padding-top: calc($padding-top / 1.5);
+$medium-padding-bottom: calc($padding-bottom / 1.5);
 $medium-padding-button: calc($medium-padding-bottom * 3);
 
 
@@ -34,25 +34,30 @@ $primary-button-color: v.$accent-color;
   border-radius: $padding-top;
 
   &:hover {
-    filter: brightness(85%);
+    // filter: brightness(85%);
   }
 
   &:focus {
     outline: none;
   }
-}
 
-.primary-btn {
-  background-color: $primary-button-color;
-  border: f.rem(2) solid v.$accent-color;
-}
+  &--primary {
+    background-color: $primary-button-color;
+    border: f.rem(2) solid v.$accent-color;
+  }
 
-.secondary-btn {
-  background-color: transparent;
-  border: f.rem(2) solid v.$accent-color;
-  color: v.$accent-color;
-}
+  &--secondary {
+    background-color: transparent;
+    border: f.rem(2) solid v.$accent-color;
+    color: v.$accent-color;
 
-.medium-btn {
-  padding: $medium-padding-top $medium-padding-button $medium-padding-bottom $medium-padding-button;
+    &:hover {
+      background: v.$accent-color;
+      color: v.$primary-color;
+    }
+  }
+
+  &--medium {
+    padding: $medium-padding-top $medium-padding-button $medium-padding-bottom $medium-padding-button;
+  }
 }

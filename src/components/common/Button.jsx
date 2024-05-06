@@ -1,12 +1,12 @@
 const Button = ({
   onClick,
   children,
-  color,
+  variant,
   type,
   className = "",
   size = "big",
 }) => {
-  const buttonClassName = `button ${color}-btn ${className} ${size}-btn`;
+  const buttonClassName = `button button--${variant} ${className} button--${size}`;
 
   return (
     <button className={buttonClassName} onClick={onClick} type={type}>

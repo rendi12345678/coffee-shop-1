@@ -3,21 +3,21 @@ import FeaturedProductItem from "./FeaturedProductItem";
 const products = [
   {
     id: 1,
-    name: "Product 1",
+    name: "Arabica Black Coffee",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "./imgs/coffee5.jpg",
+    image: "./imgs/coffee3.jpg",
   },
   {
     id: 2,
-    name: "Product 2",
+    name: "Arabica Cappucino",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: "./imgs/coffee5.jpg",
   },
   {
     id: 3,
-    name: "Product 3",
+    name: "Arabica Black Coffee",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "./imgs/coffee5.jpg",
+    image: "./imgs/coffee4.jpg",
   },
 ];
 

@@ -6,11 +6,11 @@
     margin-bottom: v.$spacing-1;
   }
 
-  margin-bottom: v.$spacing-4;
-}
+  &--center-text {
+    @include m.flex-container(center, center);
+    text-align: center;
+    flex-direction: column;
+  }
 
-.title.center-text {
-  @include m.flex-container(center, center);
-  text-align: center;
-  flex-direction: column;
+  margin-bottom: v.$spacing-4;
 }

@@ -15,7 +15,7 @@ const Hero = () => {
             veritatis, distinctio recusandae provident earum atque ex voluptates
             ullam quas. Maiores?
           </p>
-          <Button className="hero__button" color="primary" type="button">
+          <Button className="hero__button" variant="primary" type="button">
             Book now
           </Button>
         </div>

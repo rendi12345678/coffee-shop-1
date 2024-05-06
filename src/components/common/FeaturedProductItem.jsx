@@ -7,18 +7,20 @@ const FeaturedProductItem = ({ id, name, description, image }) => {
       <div className="featured-products__info">
         <h5 className="featured-products__info__title">{name}</h5>
         <p className="featured-products__description">{description}</p>
-
+        <p className="featured-products__reviews small-text">
+          ⭐ 5.00 (1k reviews)
+        </p>
         <div className="featured-products__price-and-btn">
           <p className="featured-products__price">
-            Price: <strong>$50</strong>
+            Price: <strong>$25</strong>
           </p>
           <Button
             className="featured-products__button"
             type="button"
-            color="primary"
+            variant="primary"
             size="medium"
           >
-            Buy Now
+            Add to cart
           </Button>
         </div>
       </div>

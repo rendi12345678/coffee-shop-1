@@ -30,7 +30,7 @@ const OurCoffee = () => {
               <h6>Capuccino</h6>
             </li>
           </ul>
-          <Button color="primary" type="button">
+          <Button variant="primary" type="button">
             More menu
           </Button>
         </div>

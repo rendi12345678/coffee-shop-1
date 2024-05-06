@@ -20,6 +20,11 @@
     padding: v.$spacing-1;
   }
 
+  &__reviews {
+    margin-top: v.$spacing-1;
+    font-weight: 550;
+  }
+
   &__price-and-btn {
     width: 100%;
     @include m.flex-container(space-between, baseline);
