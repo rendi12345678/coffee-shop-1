@@ -4,9 +4,9 @@
 
 .featured-products {
   &__list {
-    @include m.grid-container(space-between, center);
-    grid-template-columns: repeat(auto-fit, minmax(f.rem(200), 1fr));
-    gap: v.$spacing-2;
+    @include m.grid-container(space-between, start);
+    grid-template-columns: repeat(auto-fit, minmax(v.$card-min-width, 1fr));
+    gap: v.$card-gap-size;
     width: 100%;
   }
 

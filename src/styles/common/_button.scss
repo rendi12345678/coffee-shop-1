@@ -57,7 +57,16 @@ $primary-button-color: v.$accent-color;
     }
   }
 
+  &--tertiary {
+    background: transparent;
+    color: v.$accent-color;
+  }
+
   &--medium {
     padding: $medium-padding-top $medium-padding-button $medium-padding-bottom $medium-padding-button;
+  }
+
+  &--small {
+    padding: 0;
   }
 }

@@ -1,0 +1,21 @@
+@use "../variables/" as v;
+@use "../functions/" as f;
+@use "../mixins/" as m;
+
+.why-we-are-special {
+  &__list {
+    @include m.grid-container(unset, start);
+    grid-template-columns: repeat(auto-fit, minmax(v.$card-min-width, 1fr));
+    gap: v.$card-gap-size;
+  }
+
+  &__info {
+    padding: v.$spacing-1;
+    background: v.$secondary-color;
+  }
+
+  &__description {
+    $max-lines: 2;
+
+  }
+}
