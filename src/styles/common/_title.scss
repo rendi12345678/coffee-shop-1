@@ -2,10 +2,6 @@
 @use "../mixins/" as m;
 
 .title {
-  h2 {
-    margin-bottom: v.$spacing-1;
-  }
-
   &--center-text {
     @include m.flex-container(center, center);
     text-align: center;

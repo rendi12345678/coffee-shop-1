@@ -1,19 +1,30 @@
+import Button from "../common/Button";
 import Container from "../common/Container";
 
 const OurOffer = () => {
   return (
-    <section className="out-offer">
-      <Container className="out-offer__container">
-        <div className="out-offer__info">
-          <h6 className="out-offer__sub-title">Our Offer</h6>
-          <h2 className="out-offer__title">Tesss</h2>
-          <p className="out-offer__description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Repudiandae iste debitis impedit beatae omnis veritatis ex harum
-            ullam perspiciatis id.
+    <section className="our-offer">
+      <Container className="our-offer__container">
+        <div className="our-offer__info">
+          <h6 className="our-offer__sub-title primary-text">Our Offer</h6>
+          <h2 className="our-offer__title">
+            Get 20% Discount Of Your First Order
+          </h2>
+          <p className="our-offer__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            minima quod animi consequuntur quibusdam quae nobis dolorem.
+            Quisquam fugiat minima culpa?
           </p>
+          <Button
+            className="our-offer__button"
+            type="button"
+            variant="primary"
+            size="big"
+          >
+            View menu
+          </Button>
         </div>
-        <div className="out-offer__image">
+        <div className="our-offer__image">
           <img src="/imgs/coffee5.jpg" alt="Coffee" />
         </div>
       </Container>

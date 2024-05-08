@@ -1,0 +1,32 @@
+@use "../variables/" as v;
+@use "../mixins/" as m;
+
+.our-offer {
+  background: v.$secondary-color;
+  padding-block: v.$padding-size;
+
+  &__container {
+    @include m.grid-container (unset, center);
+    grid-template-columns: v.$bigger-column-size v.$smaller-column-size;
+    gap: v.$gap-size;
+  }
+
+  &__info {
+    width: 100%;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    aspect-ratio: 3 / 4;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &__button {
+    margin-top: v.$button-margin-top;
+  }
+}

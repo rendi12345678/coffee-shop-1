@@ -8,7 +8,7 @@ const WhyWeAreSpecialListItem = ({
   name,
   description,
 }) => {
-  const extractedDescription = useWordsExtractor(description, 10);
+  const extractedDescription = useWordsExtractor(description, 6);
   const [readMore, setReadMore] = useState(false);
 
   const renderDescription = () => {
