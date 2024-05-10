@@ -10,7 +10,7 @@
   &__container {
     height: 100%;
     @include m.grid-container(space-between, center);
-    grid-template-columns: .6fr .4fr;
+    grid-template-columns: v.$bigger-column-size v.$smaller-column-size;
     gap: v.$gap-size;
   }
 
@@ -25,9 +25,9 @@
 
   &__image {
     justify-self: end;
+    box-shadow: v.$shadow;
     width: 100%;
     aspect-ratio: 3 / 4;
-    border: v.$border;
     overflow: hidden;
 
     img {

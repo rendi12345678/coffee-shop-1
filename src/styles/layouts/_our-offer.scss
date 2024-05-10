@@ -6,7 +6,7 @@
   padding-block: v.$padding-size;
 
   &__container {
-    @include m.grid-container (unset, center);
+    @include m.grid-container (space-between, center);
     grid-template-columns: v.$bigger-column-size v.$smaller-column-size;
     gap: v.$gap-size;
   }
@@ -20,13 +20,17 @@
     height: 100%;
     box-sizing: border-box;
     aspect-ratio: 3 / 4;
+    box-shadow: v.$shadow;
 
     img {
       object-fit: cover;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
     }
   }
 
-  &__button {
+    &__button {
     margin-top: v.$button-margin-top;
+    }
   }
-}

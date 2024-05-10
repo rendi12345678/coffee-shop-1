@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import Button from "../common/Button";
 import Container from "../common/Container";
 
 const OurOffer = () => {
+  useEffect(() => {
+    console.log("hello world");
+  }, []);
   return (
     <section className="our-offer">
       <Container className="our-offer__container">
@@ -10,11 +14,7 @@ const OurOffer = () => {
           <h2 className="our-offer__title">
             Get 20% Discount Of Your First Order
           </h2>
-          <p className="our-offer__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-            minima quod animi consequuntur quibusdam quae nobis dolorem.
-            Quisquam fugiat minima culpa?
-          </p>
+          <p className="our-offer__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem veritatis, distinctio recusandae provident earum atque ex voluptates ullam quas. Maiores?</p>
           <Button
             className="our-offer__button"
             type="button"
@@ -25,7 +25,7 @@ const OurOffer = () => {
           </Button>
         </div>
         <div className="our-offer__image">
-          <img src="/imgs/coffee5.jpg" alt="Coffee" />
+          <img src="/imgs/coffee4.jpg" alt="Coffee" />
         </div>
       </Container>
     </section>
