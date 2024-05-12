@@ -2,6 +2,10 @@
 @use "../functions/" as f;
 @use "../mixins/" as m;
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   width: min(100% - v.$spacing-6, v.$max-width);
   margin-inline: auto;

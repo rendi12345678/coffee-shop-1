@@ -2,6 +2,7 @@ import FeaturedProducts from "../layout/FeaturedProducts";
 import Hero from "../layout/Hero";
 import OurCoffee from "../layout/OurCoffee";
 import OurOffer from "../layout/OurOffer";
+import Testimonials from "../layout/Testimonials";
 import WhyWeAreSpecial from "../layout/WhyWeAreSpecial";
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
       <FeaturedProducts />
       <WhyWeAreSpecial />
       <OurOffer />
+      <Testimonials />
     </>
   );
 }

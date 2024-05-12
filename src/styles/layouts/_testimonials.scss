@@ -1,0 +1,31 @@
+@use "../variables/" as v;
+@use "../functions/" as f;
+@use "../mixins/" as m;
+
+.testimonials {
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    h2 {
+      max-width: 40ch;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    display: grid;
+    width: 100vw;
+    // margin-inline: calc(-50vw - -50%);
+    grid-template-columns: repeat(4, f.rem(600));
+    gap: v.$spacing-2;
+    overflow-x: auto;
+  }
+
+  &__item {
+    background-color: v.$secondary-color;
+    padding: v.$spacing-2;
+    border-radius: v.$border-radius;
+  }
+}
