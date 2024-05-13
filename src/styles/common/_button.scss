@@ -2,20 +2,13 @@
 @use "../variables/" as v;
 @use "../functions/" as f;
 
-$button-color: #3498db;
-$button-hover-color: #2980b9;
+// Button sizes
+$base-vertical-padding: calc(v.$spacing-1);
+$base-horizontal-padding: calc(#{$base-vertical-padding} * 3);
+$medium-vertical-padding: calc(#{$base-vertical-padding} / 1.5);
+$medium-horizontal-padding: calc(#{$medium-vertical-padding} * 3);
 
-$padding-top: calc(b.$h1 / 3.4);
-$padding-bottom: calc(b.$h1 / 3.4);
-$padding-button: calc($padding-bottom * 3);
-
-
-// medium button
-$medium-padding-top: calc($padding-top / 1.5);
-$medium-padding-bottom: calc($padding-bottom / 1.5);
-$medium-padding-button: calc($medium-padding-bottom * 3);
-
-
+// Button colors
 $button-font-color: v.$primary-color;
 $primary-button-color: v.$accent-color;
 
@@ -28,16 +21,16 @@ $primary-button-color: v.$accent-color;
   outline: none;
   transition: 0.3s ease;
   font-weight: 600;
-  color: v.$primary-color;
+  color: $button-font-color;
   box-sizing: border-box;
-  border-radius: $padding-top;
 
-  &:hover {
-    // filter: brightness(85%);
+  // Button variations
+  &--normal {
+    border-radius: $base-vertical-padding;
   }
 
-  &:focus {
-    outline: none;
+  &--circle {
+    border-radius: 50%;
   }
 
   &--primary {
@@ -61,15 +54,42 @@ $primary-button-color: v.$accent-color;
     color: v.$accent-color;
   }
 
+  &--fortiary {
+    background: transparent;
+    color: v.$text-color;
+    border: f.rem(2) solid v.$border-color;
+
+    &:hover {
+      background: v.$accent-color;
+      border-color: v.$accent-color;
+      color: v.$primary-color;
+    }
+  }
+
+  // Button sizes
   &--big {
-    padding: $padding-top $padding-button $padding-bottom $padding-button;
+    padding: $base-vertical-padding $base-horizontal-padding;
   }
 
   &--medium {
-    padding: $medium-padding-top $medium-padding-button $medium-padding-bottom $medium-padding-button;
+    padding: $medium-vertical-padding $medium-horizontal-padding;
   }
 
   &--small {
-    padding: 0;
+    padding: calc(#{$medium-vertical-padding} / 1);
+    line-height: 1;
+  }
+
+  // Button states
+  &:hover {
+    // filter: brightness(85%);
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &:focus {
+    outline: none;
   }
 }

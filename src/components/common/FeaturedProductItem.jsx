@@ -8,7 +8,7 @@ const FeaturedProductItem = ({ id, name, description, image }) => {
         <h5 className="featured-products__info__title">{name}</h5>
         <p className="featured-products__description">{description}</p>
         <p className="featured-products__reviews small-text">
-          ⭐ 5.00 (1k reviews)
+          <span className="star">&#9733;</span> 5.00 (1k reviews)
         </p>
         <div className="featured-products__price-and-btn">
           <p className="featured-products__price">

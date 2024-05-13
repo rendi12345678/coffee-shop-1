@@ -1,5 +1,7 @@
+import TestimonialsProvider from "../../providers/TestimonialsProvider";
 import FeaturedProducts from "../layout/FeaturedProducts";
 import Hero from "../layout/Hero";
+import Location from "../layout/Location";
 import OurCoffee from "../layout/OurCoffee";
 import OurOffer from "../layout/OurOffer";
 import Testimonials from "../layout/Testimonials";
@@ -13,7 +15,10 @@ function Home() {
       <FeaturedProducts />
       <WhyWeAreSpecial />
       <OurOffer />
-      <Testimonials />
+      <TestimonialsProvider>
+        <Testimonials />
+      </TestimonialsProvider>
+      <Location />
     </>
   );
 }

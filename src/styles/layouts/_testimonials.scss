@@ -14,18 +14,50 @@
   }
 
   &__list {
-    position: absolute;
     display: grid;
-    width: 100vw;
+    scroll-snap-type: x mandatory;
     // margin-inline: calc(-50vw - -50%);
-    grid-template-columns: repeat(4, f.rem(600));
+    width: 100%;
+    grid-template-columns: repeat(4, calc(50% - v.$spacing-1));
     gap: v.$spacing-2;
+    grid-auto-columns: 0.5fr;
     overflow-x: auto;
+    margin-bottom: v.$spacing-4;
   }
 
   &__item {
+    border-left: v.$spacing-1 solid v.$contrast-color;
     background-color: v.$secondary-color;
+    scroll-snap-align: start;
     padding: v.$spacing-2;
     border-radius: v.$border-radius;
+  }
+
+  &__more-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: calc(v.$spacing-1 / 1.5);
+  }
+
+  &__stars {
+    margin-block: v.$spacing-1;
+  }
+
+  &__opinion {
+    margin-block: v.$spacing-1;
+  }
+
+  &__name {
+    color: v.$heading-color;
+    font-weight: bold;
   }
 }

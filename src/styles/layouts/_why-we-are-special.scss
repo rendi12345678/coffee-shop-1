@@ -16,6 +16,9 @@
 
   &__description {
     $max-lines: 2;
+  }
 
+  &__read-more-button {
+    padding: 0;
   }
 }

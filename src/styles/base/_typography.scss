@@ -87,6 +87,12 @@ button,
   max-width: 70ch;
   font-weight: 500;
   line-height: 1.5;
+  color: v.$text-color;
+}
+
+.star {
+  color: v.$accent-color;
+  font-size: $h5;
 }
 
 .small-text {
