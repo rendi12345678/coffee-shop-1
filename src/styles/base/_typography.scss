@@ -81,7 +81,10 @@ h6 {
 p,
 a,
 button,
-.small-text {
+button::after,
+button::before,
+.small-text,
+span {
   font-family: v.$body-font;
   font-size: $body-text;
   max-width: 70ch;
@@ -91,6 +94,7 @@ button,
 }
 
 .star {
+  line-height: 1.5;
   color: v.$accent-color;
   font-size: $h5;
 }

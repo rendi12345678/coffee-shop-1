@@ -3,9 +3,6 @@ import Button from "../common/Button";
 import Container from "../common/Container";
 
 const OurOffer = () => {
-  useEffect(() => {
-    console.log("hello world");
-  }, []);
   return (
     <section className="our-offer">
       <Container className="our-offer__container">
@@ -14,7 +11,11 @@ const OurOffer = () => {
           <h2 className="our-offer__title">
             Get 20% Discount Of Your First Order
           </h2>
-          <p className="our-offer__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem veritatis, distinctio recusandae provident earum atque ex voluptates ullam quas. Maiores?</p>
+          <p className="our-offer__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+            veritatis, distinctio recusandae provident earum atque ex voluptates
+            ullam quas. Maiores?
+          </p>
           <Button
             className="our-offer__button"
             type="button"

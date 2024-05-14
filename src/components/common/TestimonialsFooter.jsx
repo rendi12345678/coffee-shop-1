@@ -33,7 +33,7 @@ const TestimonialsFooter = () => {
           className="testimonials__prev-btn"
           shape="circle"
         >
-          {"<"}
+          {/* {"<"} */}
         </Button>
         <Button
           onClick={goToNext}
@@ -43,7 +43,7 @@ const TestimonialsFooter = () => {
           className="testimonials__next-btn"
           shape="circle"
         >
-          {">"}
+          {/* {">"} */}
         </Button>
       </div>
     </div>
