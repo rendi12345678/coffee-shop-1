@@ -1,0 +1,82 @@
+@use "../variables/" as v;
+@use "../mixins/" as m;
+@use "../functions/" as f;
+@use "../base/" as b;
+
+.footer {
+  &__container-content {
+    @include m.flex-container(space-between, start);
+  }
+
+  &__title {
+    margin-bottom: v.$spacing-1;
+  }
+
+  &__text {
+    opacity: 0.7;
+    font-weight: 600;
+  }
+
+  &__list {
+    @include m.flex-container(unset, start) {
+      flex-direction: column;
+      gap: v.$spacing-1;
+    }
+    list-style-type: none; /* Removes default bullet points */
+    list-style-position: inside;
+    padding-left: 0; /* Removes default padding */
+
+    &--links {
+      @include m.flex-container(space-between, start);
+      flex-direction: row;
+    }
+  }
+
+  &__link {
+    img {
+      width: f.rem(35);
+      height: f.rem(35);
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin-left: calc(v.$spacing-2 * 1);
+
+    &--link {
+      margin-left: 0;
+      &::before {
+        display: none;
+      }
+    }
+
+    &::before {
+      content: "\2022"; /* Unicode character for bullet point (•) */
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: b.$h3;
+      left: calc(v.$spacing-2 * -1); /* Adjust the distance from the left */
+      color: v.$accent-color; /* Color of the bullet point */
+    }
+
+    span {
+      font-size: b.$small-text;
+      font-weight: 600;
+      opacity: 0.7;
+    }
+
+    p {
+      font-weight: 600;
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+    font-weight: 600;
+    opacity: 0.7;
+    width: 100%;
+    max-width: 100%;
+    margin-block: v.$spacing-4;
+  }
+}

@@ -2,4 +2,5 @@
   display: grid;
   justify-content: $justify-content;
   align-items: $align-items;
+  @content;
 }

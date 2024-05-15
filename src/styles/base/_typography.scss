@@ -7,7 +7,7 @@ $body-text-min: f.rem(16);
 $body-text-prefered: 1.8vw;
 $body-text-max: f.rem(18);
 $body-text: clamp($body-text-min, $body-text-prefered, $body-text-max);
-$small-text: calc($body-text);
+$small-text: calc($body-text - f.rem(2));
 $h6: calc($body-text);
 $h5: calc($h6 * $golden-ratio);
 $h4: calc($h5 * $golden-ratio);

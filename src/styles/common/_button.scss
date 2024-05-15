@@ -12,13 +12,6 @@ $medium-horizontal-padding: calc(#{$medium-vertical-padding} * 3);
 $button-font-color: v.$primary-color;
 $primary-button-color: v.$accent-color;
 
-button::after,
-button::before {
-  &:hover {
-    color: v.$primary-color;
-  }
-}
-
 .button {
   display: inline-block;
   border: none;
@@ -70,6 +63,10 @@ button::before {
       background: v.$accent-color;
       border-color: v.$accent-color;
       color: v.$primary-color;
+
+      &::after {
+        color: v.$primary-color;
+      }
     }
   }
 

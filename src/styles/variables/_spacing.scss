@@ -1,6 +1,6 @@
 @use "../functions/" as f;
 
-$base-spacing: f.rem(28);
+$smaller-size: f.get-spacing(0.5);
 $spacing-1: f.get-spacing(1);
 $spacing-2: f.get-spacing(2);
 $spacing-3: f.get-spacing(3);
